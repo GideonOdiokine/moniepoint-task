@@ -5,6 +5,7 @@ import rateIcon from "./../../../../../public/images/rateIcon.png";
 import visitStatistic from "./../../../../../public/images/visit-statistics.png";
 import people from "./../../../../../public/images/people.png";
 import rate2 from "./../../../../../public/images/rate2.png";
+import SaleStatisticBottom from './SaleStatisticBottom';
 
 const SaleStatistic: FC = () => {
   return (
@@ -119,6 +120,7 @@ const SaleStatistic: FC = () => {
             </p>
           </div>
         </div>
+        <SaleStatisticBottom />
       </div>
     </div>
   );
