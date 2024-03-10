@@ -36,9 +36,7 @@ const LayoutFooter: FC = () => {
           </div>
           <h1 className="text-5xl">hello@ramos.com</h1>
         </div>
-
         <div className="my-20  border border-gray-300"></div>
-
         <section className="flex justify-between">
           <div className="flex justify-between gap-20">
             <div>
