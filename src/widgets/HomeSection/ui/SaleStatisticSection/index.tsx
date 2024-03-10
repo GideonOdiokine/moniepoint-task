@@ -6,21 +6,13 @@ import visitStatistic from "./../../../../../public/images/visit-statistics.png"
 import people from "./../../../../../public/images/people.png";
 import rate2 from "./../../../../../public/images/rate2.png";
 import SaleStatisticBottom from './SaleStatisticBottom';
+import SaleStatisiticTop from './SaleStatisticTop';
 
 const SaleStatistic: FC = () => {
   return (
     <div className="mb-16 mt-10  rounded-[80px] bg-[#f9f9f9] pt-20">
       <div className="container mx-auto px-[28px] text-black">
-        <div className="flex items-center justify-between pr-[30px]">
-          <p className="text-5xl font-normal">
-            Your key to strategic
-            <br /> success through analytics
-          </p>
-          <p className="text-base font-semibold ">
-            Ready to exciting, instantenous
-            <br /> all-accessible insights in real time?
-          </p>
-        </div>
+      <SaleStatisiticTop/>
         <div className="flex items-center justify-between gap-5">
           <div className="box-shadow my-8 w-3/5 rounded-[2rem] border border-[#eaeaea] bg-white pt-8">
             <div className="flex items-center justify-between">
