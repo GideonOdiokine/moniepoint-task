@@ -17,7 +17,6 @@ const DataAnalytic: FC = () => {
             Turning data into real <br /> actions and ideas
           </h1>
         </div>
-
         <div className="relative flex justify-between">
           <div>
             {points.map((point) => (
