@@ -31,6 +31,8 @@ const Efficiency:FC = () => {
           </section>
 
           <div className="h-fit w-fit rounded-full bg-yellow-500 p-4 text-5xl text-white">
+            {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
+            {/* @ts-ignore */}
             <marquee>Analytics service</marquee>
           </div>
         </div>
