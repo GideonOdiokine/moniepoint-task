@@ -100,7 +100,7 @@ const SaleStatistic: FC = () => {
                 <p className="p-4 text-base text-white">Transactions</p>
                 <img
                   //   style={springTwo}
-                  className="m-auto flex w-[30%]"
+                  className="m-auto relative left-5 flex w-[30%]"
                   src={rate2}
                   alt="rateIcon"
                 />
