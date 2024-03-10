@@ -37,7 +37,7 @@ const Efficiency:FC = () => {
           </div>
         </div>
 
-        <div className="mx-auto my-12 mt-24 w-[80%] border-t border-gray-300"></div>
+        <div className="my-12 mt-24 border-t border-gray-300"></div>
 
         <div className="my-4 flex justify-between p-4">
           <h1 className="text-xl">
