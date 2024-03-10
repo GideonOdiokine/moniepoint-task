@@ -4,6 +4,7 @@ import slider from "./../../../../../public/images/slider.png";
 import rateIcon from "./../../../../../public/images/rateIcon.png";
 import visitStatistic from "./../../../../../public/images/visit-statistics.png";
 import people from "./../../../../../public/images/people.png";
+import rate2 from "./../../../../../public/images/rate2.png";
 
 const SaleStatistic: FC = () => {
   return (
@@ -87,32 +88,32 @@ const SaleStatistic: FC = () => {
               </div>
             </div>
           </div>
-          <div className="box-shadow w-[40%] h-[424.84] my-8 rounded-[2rem] border border-[#eaeaea] bg-[#0d0d0d]  pt-8">
-            <div className="w-[80%] mx-auto flex items-center justify-between">
+          <div className="box-shadow my-8 h-[424.84] w-[40%] rounded-[2rem] border border-[#eaeaea] bg-[#0d0d0d]  pt-8">
+            <div className="mx-auto flex w-[80%] items-center justify-between">
               <img
                 //   style={springTwo}
                 className="h-[30%] w-[50%]"
                 src={people}
                 alt="people-image"
               />
-              <div className="border-1 mt-2  h-[10rem] w-[45%] border border-[#322f2f] bg-[#121211] ">
+              <div className="border-1 mt-2 pl-5  h-[10.6rem] w-[45%] rounded-3xl border border-[#322f2f] bg-[#121211] ">
                 <p className="p-4 text-base text-white">Transactions</p>
                 <img
                   //   style={springTwo}
                   className="m-auto flex w-[30%]"
-                  src={rateIcon}
+                  src={rate2}
                   alt="rateIcon"
                 />
                 <span className="pl-4 text-6xl text-white">
                   {/* {countdownSpringTwo.number.to((num) => num.toFixed(1))} */}{" "}
-                  5
+                  5K
                 </span>
               </div>
             </div>
-            <p className="text-2xl my-3 font-normal text-center text-white">
+            <p className="my-3 text-center text-2xl font-normal text-white">
               Widget control
             </p>
-            <p className="text-[#999] py-5 pb-14 text-xl font-normal text-center">
+            <p className="py-5 pb-14 text-center text-xl font-normal text-[#999]">
               Reports provides a comprehensive overview <br />
               of important aspects of web analytics.
             </p>
