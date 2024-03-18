@@ -10,7 +10,7 @@ import Image from './../../../../../public/images/devices.png'
   ];
 const DataAnalytic: FC = () => {
   return (
-    <section className="pb-30 rounded-[80px] bg-slate-50 p-4 pt-24">
+    <section className="pb-30 relative top-0 rounded-[80px] bg-slate-50 p-4 pt-24">
       <div className="container mx-auto px-8">
         <div className="flex justify-between">
           <h1 className="my-4 text-4xl text-black">
@@ -31,8 +31,8 @@ const DataAnalytic: FC = () => {
             ))}
           </div>
         </div>
-        <div className="relative top-0">
-          <div className="bg-bookmark-purple lg: absolute right-[-150px]  top-[-352px] z-10">
+        <div className=" top-0">
+          <div className="bg-bookmark-purple lg: absolute right-[-150px]  top-[102px] z-10">
             <img
               src={Image}
               alt="logo"
