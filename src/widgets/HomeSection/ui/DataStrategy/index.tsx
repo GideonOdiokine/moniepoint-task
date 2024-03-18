@@ -1,6 +1,6 @@
-import React from "react";
+import {FC} from "react";
 
-const DataStrategy = () => {
+const DataStrategy:FC = () => {
   return (
     <div className="max-text">
       <div>

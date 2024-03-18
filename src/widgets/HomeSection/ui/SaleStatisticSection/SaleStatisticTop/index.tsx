@@ -1,6 +1,6 @@
-import React from 'react'
+import {FC} from 'react'
 
-const SaleStatisiticTop = () => {
+const SaleStatisiticTop: FC = () => {
   return (
     <div className="flex items-center justify-between pr-[30px]">
       <p className="text-5xl font-normal">
@@ -13,6 +13,6 @@ const SaleStatisiticTop = () => {
       </p>
     </div>
   );
-}
+};
 
 export default SaleStatisiticTop
