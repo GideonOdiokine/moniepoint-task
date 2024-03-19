@@ -50,7 +50,7 @@ const Efficiency:FC = () => {
             <button className="flex h-fit w-fit items-center justify-center rounded-xl border bg-gray-200 px-8 py-3 text-center text-sm text-black transition-all">
               Request a demo
             </button>
-            <button className="flex h-fit w-fit items-center justify-center rounded-xl border bg-yellow-500 px-8 py-3 text-center text-sm text-black transition-all">
+            <button className="flex h-fit w-fit items-center justify-center rounded-xl border bg-[#fe4a23] px-8 py-3 text-center text-sm text-white transition-all">
               Start for free
             </button>
           </div>

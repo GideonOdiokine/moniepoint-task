@@ -1,4 +1,4 @@
-import { DataAnalytic, Efficiency, HeroSection, SaleStatistic } from '@/widgets/HomeSection';
+import { DataAnalytic, DataAndSaleSection, Efficiency, HeroSection, SaleStatistic } from '@/widgets/HomeSection';
 import { FC } from "react";
 
 const Home: FC = () => {
@@ -8,6 +8,7 @@ const Home: FC = () => {
       <SaleStatistic/>
       <Efficiency/>
       <DataAnalytic/>
+      <DataAndSaleSection/>
     </>
   );
 };

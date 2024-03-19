@@ -20,7 +20,7 @@ const socials = [
 const LayoutFooter: FC = () => {
   return (
     <footer className="font-jost bg-[#0d0d0d] text-white ">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-8">
         <div className="flex justify-between  py-20">
           <div className="mt-5 flex">
             {items.map((item, i) => (

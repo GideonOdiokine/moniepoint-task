@@ -36,9 +36,13 @@ const DataStrategy:FC = () => {
             Ramos today. Sign up for a free trail.
           </span>
         </div>
-        <div className="group-wrapper">
-          <button className="request-btn">Request a demo</button>
-          <button className="start-btn">Start for free</button>
+        <div className="flex gap-2">
+          <button className="flex h-fit w-fit items-center justify-center rounded-xl border bg-gray-200 px-8 py-3 text-center text-sm text-black transition-all">
+            Request a demo
+          </button>
+          <button className="flex h-fit w-fit items-center justify-center rounded-xl border bg-[#fe4a23] px-8 py-3 text-center text-sm text-white transition-all">
+            Start for free
+          </button>
         </div>
       </div>
     </div>
