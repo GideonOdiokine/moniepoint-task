@@ -1,23 +1,41 @@
-import { FC } from "react";
-import Image1 from './../../../../../public/images/total1.png'
-import slider from "./../../../../../public/images/slider.png";
-import rateIcon from "./../../../../../public/images/rateIcon.png";
-import visitStatistic from "./../../../../../public/images/visit-statistics.png";
-import people from "./../../../../../public/images/people.png";
-import rate2 from "./../../../../../public/images/rate2.png";
+import { FC, useEffect, useState } from "react";
+import Image1 from '/images/total1.png'
+import slider from "/images/slider.png";
+import rateIcon from "/images/rateIcon.png";
+import visitStatistic from "/images/visit-statistics.png";
+import people from "/images/people.png";
+import rate2 from "/images/rate2.png";
 import SaleStatisticBottom from './SaleStatisticBottom';
 import SaleStatisiticTop from './SaleStatisticTop';
+import { useInView } from 'react-intersection-observer';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const SaleStatistic: FC = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  const { ref, inView } = useInView({ threshold: 0.2 }); // adjust threshold as needed
+    useEffect(() => {
+      AOS.init();
+    }, []);
+  useEffect(() => {
+    if (inView) {
+      setIsVisible(true);
+    }
+  }, [inView]);
   return (
-    <div className="mb-16 mt-10  rounded-[80px] bg-[#f9f9f9] pt-20">
+    <div
+      className="mb-16 mt-10  rounded-[80px] bg-[#f9f9f9] pt-20"
+      data-aos="fade-up"
+      ref={ref}
+    >
       <div className="container mx-auto px-[28px] text-black">
-      <SaleStatisiticTop/>
+        <SaleStatisiticTop />
         <div className="flex items-center justify-between gap-5">
           <div className="box-shadow my-8 w-3/5 rounded-[2rem] border border-[#eaeaea] bg-white pt-8">
             <div className="flex items-center justify-between">
-              <div className="w-[50%] pb-8 pl-8">
-                <button className="box-shadow  mx-[10px] h-12 cursor-pointer rounded-2xl  border-none bg-yellow-400 px-[1rem] py-0  ">
+              <div className=" w-[50%] pb-8 pl-8">
+                <button className="box-shadow  mx-[10px] h-12 cursor-pointer  rounded-2xl border-none bg-yellow-400 px-[1rem] py-0 ">
                   Setting up reports
                 </button>
                 <p className="mt-10 text-[24px] font-normal">
@@ -56,7 +74,7 @@ const SaleStatistic: FC = () => {
                   <div className="w-28 flex-1 rounded-2xl bg-[#f6f6f6] p-3">
                     <span className="text-[#565656]">Vistors</span>
                     <img
-                      //   style={springTwo}
+
                       className="my-[10px] w-[80%]"
                       src={slider}
                       alt="slider"
@@ -64,7 +82,7 @@ const SaleStatistic: FC = () => {
                     <span className="flex text-xl">
                       56k
                       <img
-                        // style={springTwo}
+
                         className="ml-2 h-[30%] w-[30%]"
                         src={rateIcon}
                         alt="rateIcon"
@@ -73,7 +91,7 @@ const SaleStatistic: FC = () => {
                   </div>
                 </div>
                 <img
-                  //   style={springTwo}
+
                   className="h-[50%] w-full"
                   src={visitStatistic}
                   alt="visitStatistic"
@@ -84,16 +102,14 @@ const SaleStatistic: FC = () => {
           <div className="box-shadow my-8 h-[424.84] w-[40%] rounded-[2rem] border border-[#eaeaea] bg-[#0d0d0d]  pt-8">
             <div className="mx-auto flex w-[80%] items-center justify-between">
               <img
-                //   style={springTwo}
                 className="h-[30%] w-[50%]"
                 src={people}
                 alt="people-image"
               />
-              <div className="border-1 mt-2 pl-5  h-[10.6rem] w-[45%] rounded-3xl border border-[#322f2f] bg-[#121211] ">
+              <div className="border-1 mt-2 h-[10.6rem]  w-[45%] rounded-3xl border border-[#322f2f] bg-[#121211] pl-5 ">
                 <p className="p-4 text-base text-white">Transactions</p>
                 <img
-                  //   style={springTwo}
-                  className="m-auto relative left-5 flex w-[30%]"
+                  className="relative left-5 m-auto flex w-[30%]"
                   src={rate2}
                   alt="rateIcon"
                 />

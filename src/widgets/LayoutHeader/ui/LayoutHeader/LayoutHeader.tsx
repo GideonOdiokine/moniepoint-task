@@ -7,7 +7,7 @@ const LayoutHeader: FC = () => {
   return (
     <>
       <header>
-        <nav className="flex items-center p-1 justify-between mx-auto my-[1rem] w-[95%] rounded-2xl bg-black">
+        <nav className="mx-auto my-[1rem] flex w-[95%] items-center justify-between rounded-2xl bg-black p-1">
           <Logo>
             <img src={LogoIcon} alt="logo" />
           </Logo>
@@ -20,8 +20,8 @@ const LayoutHeader: FC = () => {
               { name: "Settings", href: "/settings" },
             ]}
           />
-          <div className="">
-            <button className="btn-ghost bg-white px-6 text-black rounded-xl btn">
+          <div data-aos="fade-down">
+            <button className="btn-ghost btn rounded-xl bg-white px-6 text-black">
               Sign Up
             </button>
           </div>

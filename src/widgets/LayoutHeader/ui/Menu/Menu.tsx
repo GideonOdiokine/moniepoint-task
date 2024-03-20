@@ -11,6 +11,7 @@ const Menu: FC<Menu> = ({ links }: Menu) => {
       >
         {links.map((link, i) => (
           <li
+            data-aos="fade-down"
             className={`text-white ${
               i !== links.length - 1 ? "pr-[20px]" : ""
             }  `}

@@ -25,7 +25,7 @@ const DataAndSaleSection: FC = () => {
           </p>
 
           <div className="flex justify-center mt-[50px] mb-[150px] gap-2">
-            <button className="flex h-fit w-fit items-center justify-center rounded-xl border bg-gray-200 px-8 py-3 text-center text-sm text-black transition-all">
+            <button   className="flex h-fit w-fit items-center justify-center rounded-xl border bg-gray-200 px-8 py-3 text-center text-sm text-black transition-all">
               Request a demo
             </button>
             <button className="flex h-fit w-fit items-center justify-center rounded-xl border bg-[#fe4a23] px-8 py-3 text-center text-sm text-white transition-all">
